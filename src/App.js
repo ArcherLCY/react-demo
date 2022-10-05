@@ -1,10 +1,15 @@
+import React from 'react';
+import InputDemo from './components/InputDemo';
+import DragDemo from './components/DragDemo';
 import './App.css';
 import { Counter } from './counter/counter';
 
-function App() {
-  return (
+const App = () => (
+  <div className="App">
     <Counter/>
-  );
-}
+    <InputDemo/>
+    <DragDemo/>
+  </div>
+);
 
 export default App;
